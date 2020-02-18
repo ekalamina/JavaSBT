@@ -1,4 +1,4 @@
-public class Circle {
+public class Circle implements Figure {
 
     int radius;
 
@@ -7,7 +7,8 @@ public class Circle {
     public Circle(int radius){
         this.radius = radius;
     }
-
+	
+	@override
     public double square() {
         return pi*radius*radius;
     }
